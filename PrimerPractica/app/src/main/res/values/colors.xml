@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#00FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorbtnnumero">#FFA1A1A1</color>
+    <color name="colorbtnpunto">#FF707070</color>
+    <color name="colorop">#FF2C58C5</color>
+    <color name="colorsuma">#FF3A81D8</color>
+    <color name="colorbtnborrar">#FFFACF22</color>
+    <color name="colorbtnborrartodo">#FFFA6622</color>
+    <color name="butt">#FF191919</color>
+</resources>

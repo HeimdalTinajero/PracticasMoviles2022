@@ -25,11 +25,6 @@
             android:defaultValue="" />
     </fragment>
     <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.u2proyectonavegacion.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
-    <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.u2proyectonavegacion.SettingsFragment"
         android:label="fragment_settings"

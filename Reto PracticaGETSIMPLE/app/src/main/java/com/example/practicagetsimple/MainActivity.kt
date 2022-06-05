@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
 
         queue.add(jsonRequest)
     }
+
     override fun onStop() {
         super.onStop()
         queue.cancelAll("Stopped")

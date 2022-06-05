@@ -23,6 +23,7 @@ class HomeFragment : Fragment() {
 
         //
         var navController = findNavController()
+
         binding.buttonHometoInside.setOnClickListener{
             Toast.makeText(context, "jala",Toast.LENGTH_LONG).show()
             //navController.navigate((R.id.action_homeFragment_to_insideHomeFragment))

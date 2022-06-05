@@ -3,7 +3,7 @@ package com.example.proyectofinal2022.database
 
 class User (
     user_id:String,
-    user_name:String,
+    user_name:String
 ) {
 
     val user_id: String = user_id
@@ -12,5 +12,5 @@ class User (
 
 fun User.toEntity() = UserEntity(
     user_id,
-    user_name,
+    user_name
 )

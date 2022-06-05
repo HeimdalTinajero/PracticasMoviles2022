@@ -8,17 +8,21 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.viewModels
 import androidx.fragment.app.viewModels
+import com.example.proyectofinal2022.database.User
 import com.example.proyectofinal2022.databinding.FragmentWishlistBinding
+import com.example.proyectofinal2022.databinding.ItemStore2Binding
 
 class WishlistFragment : Fragment() {
 
     private val mainViewModel: MainViewModel by viewModels()
     private lateinit var binding : FragmentWishlistBinding
+    private lateinit var bindingItemStore2Binding: ItemStore2Binding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
 
         savedInstanceState: Bundle?
     ): View? {
+        binding = FragmentWishlistBinding.inflate(layoutInflater)
 
         Log.d("deq","Paso2")
         // Inflate the layout for this fragment
@@ -35,6 +39,9 @@ class WishlistFragment : Fragment() {
             }else
                 Log.d("deq","null or empty")
         })
-        return inflater.inflate(R.layout.fragment_wishlist, container, false)
+
+
+
+        return binding.root
     }
 }

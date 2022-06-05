@@ -32,6 +32,8 @@ class RandomHomeFragmentAdapter(private val imgs: JSONArray): RecyclerView.Adapt
         fun render(img: JSONObject){
             binding.tvitemtittle.setText(img.getString("title"))
             Picasso.get().load(img.getString("image")).into(binding.ivImageItem)
+            binding.button.setOnClickListener{
+            }
         }
     }
 }

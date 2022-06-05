@@ -1,11 +1,13 @@
 package com.example.proyectofinal2022
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.fragment.app.viewModels
 import androidx.room.RoomSQLiteQuery
 import com.android.volley.RequestQueue
@@ -26,6 +28,14 @@ class SearchFragment : Fragment() {
     private lateinit var qeue1: RequestQueue
     var imurl=""
     lateinit var user_on: String
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        val ObjetoIntent: Bundle = bundleOf(
+
+
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -42,10 +52,8 @@ class SearchFragment : Fragment() {
         {
             mainViewModel.saveUser(
                 User(
-                    /*binding.title.toString(),
-                    imurl*/
-                    "asadsf",
-                    "asfasfa"
+                    binding.title.text.toString(),
+                    imurl
                 )
             )
             myRef.child("users").child("Juan").child("wishlist").get().addOnSuccessListener { response->

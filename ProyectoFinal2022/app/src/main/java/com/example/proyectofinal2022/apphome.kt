@@ -32,6 +32,8 @@ class apphome : AppCompatActivity() {
 
         binding.Saludo.setText("Bienvenido ${name}")
 
+        val user = Intent(this,SearchFragment::class.java).putExtra("name",name)
+
         if (name != null) {
             myRef.child("users").child(name).child("date").get().addOnSuccessListener { response->
                 var date = response.value.toString()

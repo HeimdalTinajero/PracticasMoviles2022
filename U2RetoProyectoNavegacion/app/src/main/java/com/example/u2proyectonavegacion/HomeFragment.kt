@@ -34,7 +34,7 @@ class HomeFragment : Fragment() {
             val apmaterno = binding.apmat.toString()
             val usuario = binding.user.toString()
             val correo = binding.correo.toString()
-            val directions = HomeFragmentDirections.actionHomeFragmentToInsideHomeFragment("$nombre","$appaterno",apmaterno,usuario,correo)
+t            val directions = HomeFragmentDirections.actionHomeFragmentToInsideHomeFragment("$nombre","$appaterno",apmaterno,usuario,correo)
             navController.navigate(directions)
         }
 

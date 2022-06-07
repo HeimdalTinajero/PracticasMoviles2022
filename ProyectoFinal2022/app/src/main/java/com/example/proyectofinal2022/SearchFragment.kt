@@ -31,10 +31,6 @@ class SearchFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        val ObjetoIntent: Bundle = bundleOf(
-
-
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
